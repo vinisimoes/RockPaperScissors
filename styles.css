@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*NUNCA COLOCA text-align: center NA DIV, SEMPRE NO TEXTO DE DENTRO!*/
+
+body {
+    background-color: rgb(32, 42, 66);
+}
+
+header {
+    background: white;
+    padding: 1em;
+}
+
+header h1 {
+    color: rgb(32, 42, 66);
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+}
+
+.scoreboard {
+    margin: 1em auto;
+    padding: 0.2em 0.1em;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+    text-align: center;
+    width: 5em;
+    color: white;
+    font-size: 2em;
+    font-family: 'Asap', sans-serif;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.badge {
+    background: #E2584D;
+    color: white;
+    font-size: 0.4em;
+    padding: 0.1em 0.3em;
+    font-family: 'Asap', sans-serif;
+}
+
+#user-label {
+    position: absolute;
+    top: 1.3em;
+    left: -1.5em;
+}
+
+#comp-label {
+    position: absolute;
+    top: 1.3em;
+    right: -1.9em;
+}
+
+.result {
+    color: white;
+    font-size: 2.2em;
+}
+
+.result p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+}
+
+.choices {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.choices .choice {
+    display: inline-block;
+    width: 6em;
+    border: 0.2em solid #E2584D;
+    border-radius: 50%;
+    padding: 0.8em;
+    margin: 0 0.7em;
+    transition: 0.3s ease;
+}
+
+.choices .choice:hover {
+    cursor: pointer;
+    background: rgb(22, 29, 46);
+}
+
+.choices .choice img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+}
+
+#action-message {
+    color: white;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.resetBtn {
+    background: rgb(161, 161, 161);
+    margin: 1em auto;
+    padding: 0.3em;
+    font-family: 'Asap', sans-serif;
+    border: 0.1em solid rgb(37, 37, 37);
+    border-radius: 0.4em;
+    width: 4em;
+    transition: 0.3s ease;
+}
+
+.resetBtn:hover {
+    cursor: pointer;
+    background: rgb(109, 109, 109);
+}
+
+.resetBtn p {
+    text-align: center;
+}
+
+.green-border {
+    border: 0.1em solid green;
+    box-shadow: rgb(0, 68, 0);
+}
+
+.red-border {
+    border: 0.1em solid red;
+    box-shadow: rgb(155, 3, 3);
+}
+
+.grey-border {
+    border: 0.1em solid grey;
+    box-shadow: rgb(80, 80, 80);
+}
